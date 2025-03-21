@@ -1,0 +1,114 @@
+.hero {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.hero-upper {
+    position: relative;
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6D63D8;
+    overflow: hidden;
+    
+}
+.hero-upper__inner {
+    width: var(--inner-width);
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.hero-upper__content {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+}
+.hero-upper__links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.hero-upper__content > h6 {
+    color: var(--header-font);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero-upper__content > h1 {
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: var(--header-font);
+    line-height: 1.15;
+}
+.hero-upper > span {
+    position: absolute;
+    bottom: 0;
+    font-size: 35rem;
+    line-height: 0.8;
+    user-select: none;
+    letter-spacing: 10px;
+    color: rgba(255, 255, 255, 0.1);
+}
+.hero-upper__image {
+    width: 50%;
+    position: relative;
+    z-index: 2;
+    aspect-ratio: 1/1;
+    
+}
+.hero-upper__image > img {
+    width: 100%;
+    height: auto;
+    z-index: 2;
+    object-fit: contain;
+    object-position: center;
+    position: relative;
+} 
+
+.hero-upper__image::before,
+.hero-upper__image::after {
+    position: absolute;
+    content: '';
+    z-index: 1;
+    width: 200px;
+    height: 200px;
+    background-image: url(../img/dots-light.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.hero-upper__image::before {
+    bottom: 70px;
+    left: 120px;
+}
+
+.hero-upper__image::after {
+    top: 100px;
+    right: -30px;
+}
+
+.hero-lower {
+    width: 100%;
+    background-color: #EF634C;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-lower__content {
+    transform: translateY(-20%);
+    width: var(--inner-width);
+    background-color: var(--bg-color-light);
+    height: 70vh;
+    padding: 48px;
+    border-radius: 24px;
+}
