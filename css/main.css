@@ -6,6 +6,8 @@
     --dark-font: #333;
     --light-font: #fff;
     --bg-color-light: #fff;
+    --bg-dark-light: #F5F1EE;
+    --spacing: 96px;
 }
 
 * {
