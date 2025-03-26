@@ -40,3 +40,6 @@
     object-position: center;
 }
 
+section {
+    display: none !important;
+}
